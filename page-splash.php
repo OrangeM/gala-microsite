@@ -95,12 +95,16 @@ $body_class_str = get_body_class_str();
 			<div class="space">
 				<p class="title"><?php the_field('coverage_title'); ?></p>
 					<?php if( get_field('coverage_section') ): ?>
+						<div style="display:block;">
+                        <ul>
 						<?php while(has_sub_field('coverage_section')): ?>
-							<div class="coverage left">
+							<li class="coverage left">
 								<p class="coverage-text"><?php the_sub_field('coverage_text'); ?></p>
 								<p class="coverage-logo"><img src="<?php the_sub_field('upload_coverage_logo'); ?>" alt="" /></p>
-							</div>
+							</li>
 						<?php endwhile; ?>
+                        </ul>
+                        </div>
 					<?php endif; ?>
 				 <div class="clear"></div>
 			</div><div class="clear"></div>
@@ -166,13 +170,15 @@ $body_class_str = get_body_class_str();
 			<div class="space">
 				<p class="title"><?php the_field('footer_sponsor_heading'); ?></p>
 					<?php if( get_field('footer_sponsors') ): ?>
-						<?php while(has_sub_field('footer_sponsors')): ?>
+					
 						<div class="our-sponsors">
 							<ul>
+                            <?php while(has_sub_field('footer_sponsors')): ?>
 							<li class="footer-sponsor-logo left"><img src="<?php the_sub_field('sponsor_image'); ?>" alt="" /></li>
-							</ul>
+							<?php endwhile; ?>
+                            </ul>
 						</div>
-						<?php endwhile; ?>
+				
 					<?php endif; ?>
 				 <div class="clear"></div>
 			</div><div class="clear"></div>
@@ -201,3 +207,4 @@ $body_class_str = get_body_class_str();
 <!--wrapper ends -->
 <?php
     get_footer();
+?>

@@ -181,7 +181,7 @@ strong {font-weight: bold;}
 /*  secondary top menu */
 .secondary_menu{ margin-top: 35px;}
 #menu-secondary_top_menu li { float: left;}
-#menu-secondary_top_menu a { color: #000000; font-weight: bold; margin-left: 20px; text-transform: uppercase;}
+#menu-secondary_top_menu a { color: #000000; margin-left: 20px; text-transform: uppercase; font-family: 'Oswald',sans-serif;}
 /*  secondary top menu ends*/
 .topnav {padding: 34px 4px 0 0; }
 .topnav a {font-size: 17px; color: #000; display: block;}
@@ -696,7 +696,7 @@ strong {font-weight: bold;}
     }
 }
 .space{margin:3% 0%;}
-.title{ text-align:center; font-size:24px; color:#fad233;}
+.title{ text-align:center; font-size:24px; color:#fad233; font-family: 'Oswald',sans-serif;}
 .hostedby{width:955px; margin:0 auto; position:relative;}
 #sub_feature .hostedby .envelope-text{left: 0; top: 129%; position: absolute; width: 52%; padding: 22px 0 24px; color: white; font-size: 1.1em; display:block; margin-left: 25%; text-align:justify;}
 .hostedby-text { color: #000000;  margin-left: 42%; position: absolute; text-align: center; top: 178px; font-weight: bold;}
@@ -710,9 +710,14 @@ strong {font-weight: bold;}
 .highlight-text li{ color:#fff; list-style-type:disc; list-style-position:outside; background:none !important; padding:0 !important;}
 .purchase{ margin-top:5%;}
 .host-names, .steering-names, .partner-text, .sponsor-logo, .coverage{margin-top:3%;}
-.coverage{width:30%; margin-left: 3%;}
-.our-sponsors{ width:50%; margin-left:20%; text-align:center; }
-.footer-sponsor-logo{list-style-type: none !important; }
+.coverage{width:31.3%; margin-left: 3%;}
+.coverage:first-child {
+    margin-left: 0 !important;
+}
+.our-sponsors{ width:50%; margin-left:28%; margin-top:10%; text-align:center; }
+.footer-sponsor-logo{list-style-type: none !important; margin-right: 20px; line-height: 50px;}
+.footer-sponsor-logo:first-child { margin-top: -10px;  margin-left: 40px;}
+.footer-sponsor-logo:last-child { margin-left: 120px;}
 .highlight-text{width:37%; float:left; padding: 3% 3% 0 0;}
 .highlight-image{width:60%;}
 .marthas-image{padding:2% 6%; margin: 0 auto; width: 60%;}
